@@ -15,6 +15,8 @@ class Weathers: BaseModel {
     var clouds : Cloud?
     var wind : Wind?
     var rain : Rain?
+    var name : String = ""
+    var sys : Sys?
     
     override func mapping(map: Map) {
         super.mapping(map: map)
@@ -25,5 +27,7 @@ class Weathers: BaseModel {
         self.clouds <- map["clouds"]
         self.rain <- map["rain"]
         self.wind <- map["wind"]
+        self.name <- map["name"]
+        self.sys <- map["sys"]
     }
 }

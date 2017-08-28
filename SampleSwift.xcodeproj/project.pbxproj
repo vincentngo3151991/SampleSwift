@@ -19,6 +19,7 @@
 		B8BBB6F21F5489AC00828F44 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBB6F11F5489AC00828F44 /* Cloud.swift */; };
 		B8BBB6F41F5489DE00828F44 /* Wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBB6F31F5489DE00828F44 /* Wind.swift */; };
 		B8BBB6F61F548A1100828F44 /* Rain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBB6F51F548A1100828F44 /* Rain.swift */; };
+		B8BBB6F81F548D6400828F44 /* Sys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBB6F71F548D6400828F44 /* Sys.swift */; };
 		B8F8B7001F53E5E100EC569B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F8B6FF1F53E5E100EC569B /* AppDelegate.swift */; };
 		B8F8B7021F53E5E100EC569B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F8B7011F53E5E100EC569B /* ViewController.swift */; };
 		B8F8B7051F53E5E100EC569B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8F8B7031F53E5E100EC569B /* Main.storyboard */; };
@@ -64,6 +65,7 @@
 		B8BBB6F11F5489AC00828F44 /* Cloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
 		B8BBB6F31F5489DE00828F44 /* Wind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wind.swift; sourceTree = "<group>"; };
 		B8BBB6F51F548A1100828F44 /* Rain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rain.swift; sourceTree = "<group>"; };
+		B8BBB6F71F548D6400828F44 /* Sys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sys.swift; sourceTree = "<group>"; };
 		B8F8B6FC1F53E5E100EC569B /* SampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8F8B6FF1F53E5E100EC569B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8F8B7011F53E5E100EC569B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				B8BBB6F11F5489AC00828F44 /* Cloud.swift */,
 				B8BBB6F31F5489DE00828F44 /* Wind.swift */,
 				B8BBB6F51F548A1100828F44 /* Rain.swift */,
+				B8BBB6F71F548D6400828F44 /* Sys.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8BBB6EE1F54887A00828F44 /* WeatherMain.swift in Sources */,
+				B8BBB6F81F548D6400828F44 /* Sys.swift in Sources */,
 				B8BBB6EC1F54878900828F44 /* Weather.swift in Sources */,
 				B8BBB6F21F5489AC00828F44 /* Cloud.swift in Sources */,
 				B823CB5F1F545BFD00D5071B /* BaseModel.swift in Sources */,
