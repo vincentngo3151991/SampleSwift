@@ -43,7 +43,7 @@ class ControllerRouter: NSObject {
             let controller = ControllerRouter.storyBoard().instantiateViewController(withIdentifier: controllerIdentifier != nil ? controllerIdentifier! : path.rawValue) as! BaseViewController
             let routeMode = params["routeMode"] as! String
             let sender = params["sender"] as! BaseViewController
-            controller.routingPrams = params["parameters"] as AnyObject
+            controller.routingParams = params["parameters"] as AnyObject
             controller.delegate = sender
             if (routeMode == RouteMode.Push.rawValue && sender.navigationController != nil) {
                 sender.navigationController?.pushViewController(controller, animated: true)

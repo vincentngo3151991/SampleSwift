@@ -13,10 +13,9 @@
         <scene sceneID="xPR-Px-nVs">
             <objects>
                 <navigationController id="nhd-42-GWE" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ivw-lK-ARj">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ivw-lK-ARj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                         </textAttributes>
@@ -29,7 +28,7 @@
             </objects>
             <point key="canvasLocation" x="-596" y="84"/>
         </scene>
-        <!--weather forecast-->
+        <!--forecast-->
         <scene sceneID="u6S-Hg-8Ir">
             <objects>
                 <viewController id="BJZ-cr-bar" customClass="MainViewController" customModule="SampleSwift" customModuleProvider="target" sceneMemberID="viewController">
@@ -54,7 +53,7 @@
                             <constraint firstAttribute="trailing" secondItem="FvY-dK-T82" secondAttribute="trailing" id="oU6-0W-UKQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="weather forecast" id="oye-lU-tYE"/>
+                    <navigationItem key="navigationItem" title="forecast" id="oye-lU-tYE"/>
                     <connections>
                         <outlet property="tableView" destination="FvY-dK-T82" id="mCj-dc-hPg"/>
                     </connections>
@@ -66,7 +65,7 @@
         <!--Weather List View Controller-->
         <scene sceneID="nIP-eP-nDI">
             <objects>
-                <viewController storyboardIdentifier="weatherListViewControllerId" id="7tE-Ug-amO" customClass="WeatherListViewController" customModule="SampleSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="weatherListViewControllerId" automaticallyAdjustsScrollViewInsets="NO" id="7tE-Ug-amO" customClass="WeatherListViewController" customModule="SampleSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KJb-j2-HEc"/>
                         <viewControllerLayoutGuide type="bottom" id="yoE-WA-K3I"/>

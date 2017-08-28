@@ -17,6 +17,7 @@ class Weather: BaseModel {
     var rain : Rain?
     var name : String = ""
     var sys : Sys?
+    var dateText : String = ""
     
     override func mapping(map: Map) {
         super.mapping(map: map)
@@ -29,5 +30,6 @@ class Weather: BaseModel {
         self.wind <- map["wind"]
         self.name <- map["name"]
         self.sys <- map["sys"]
+        self.dateText <- map["dt_txt"]
     }
 }

@@ -14,7 +14,7 @@ protocol BaseViewControllerDelegate : class {
 
 class BaseViewController: UIViewController, BaseViewControllerDelegate {
     weak var delegate : BaseViewControllerDelegate?
-    var routingPrams: AnyObject?
+    var routingParams: AnyObject?
     let disposeBag = DisposeBag()
     
    

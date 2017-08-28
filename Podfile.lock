@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (4.5.0)
+  - AlamofireImage (3.2.0):
+    - Alamofire (~> 4.1)
   - AlamofireNetworkActivityIndicator (2.2.0):
     - Alamofire (~> 4.5)
   - AlamofireObjectMapper (4.1.0):
@@ -14,6 +16,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.5.0)
+  - AlamofireImage (~> 3.2)
   - AlamofireNetworkActivityIndicator (~> 2.2.0)
   - AlamofireObjectMapper (~> 4.1.0)
   - JLRoutes
@@ -23,6 +26,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
   AlamofireNetworkActivityIndicator: 81e1630e7cfed22a4e4e82a174c59e651dc4f8ca
   AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
   JLRoutes: 2a5ee61d739b51a98c9d8112bee5149a19de8854
@@ -31,6 +35,6 @@ SPEC CHECKSUMS:
   RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: 7e8318c899242c0ce62c4eb9c9529771350ef5dc
+PODFILE CHECKSUM: 05513372322dd6a1d01fc05fc59f8fc373c6f2df
 
 COCOAPODS: 1.3.1

@@ -9,10 +9,10 @@
 import UIKit
 
 class BaseTableViewCell: UITableViewCell {
-    var viewModel : BaseViewModel?
+    var viewModel : BaseTableViewModel?
     var indexPath : IndexPath?
     
-    func load(viewModel: BaseViewModel?, indexPath: IndexPath) {
+    func load(viewModel: BaseTableViewModel?, indexPath: IndexPath) {
         self.viewModel = viewModel
         self.indexPath = indexPath
     }
