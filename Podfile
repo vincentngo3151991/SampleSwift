@@ -1,13 +1,24 @@
 use_frameworks!
 
+def shared_pod
+    pod 'Alamofire'
+    pod 'AlamofireObjectMapper'
+    pod 'AlamofireNetworkActivityIndicator'
+    pod 'AlamofireImage'
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'JLRoutes'
+    pod 'SVProgressHUD'
+end
+
 target 'SampleSwift' do
-    pod 'Alamofire', '~> 3.0'
+    shared_pod
 end
 
 target 'SampleSwiftTests' do
-    pod 'Alamofire', '~> 3.0'
+    shared_pod
 end
 
 target 'SampleSwiftUITests' do
-    pod 'Alamofire', '~> 3.0'
+    shared_pod
 end
