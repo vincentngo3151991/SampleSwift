@@ -12,6 +12,7 @@ PODS:
   - RxCocoa (3.6.1):
     - RxSwift (~> 3.6)
   - RxSwift (3.6.1)
+  - SCLAlertView (0.7.0)
   - SVProgressHUD (2.1.2)
 
 DEPENDENCIES:
@@ -22,6 +23,7 @@ DEPENDENCIES:
   - JLRoutes
   - RxCocoa
   - RxSwift
+  - SCLAlertView
   - SVProgressHUD
 
 SPEC CHECKSUMS:
@@ -33,8 +35,9 @@ SPEC CHECKSUMS:
   ObjectMapper: 3d571bb5af471c779e1160828cd9ad5c4ef90958
   RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
   RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
+  SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: 05513372322dd6a1d01fc05fc59f8fc373c6f2df
+PODFILE CHECKSUM: efdd9f5005af336b12e45fca695b69fe58e16503
 
 COCOAPODS: 1.3.1

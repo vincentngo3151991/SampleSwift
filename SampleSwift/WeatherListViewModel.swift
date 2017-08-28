@@ -14,9 +14,13 @@ class WeatherListViewModel: BaseTableViewModel {
     func fetchWeather(zipCode: String) {
         WeatherRequest.getWeather(zip: zipCode)
             .subscribe(onSuccess: { [weak self]weathers in
-                self?.weathers.value = weathers
+                if weathers?.message == nil {
+                    self?.weathers.value = weathers
+                } else {
+                    self?.error.value = NSError(domain: weathers!.message!, code: Int(weathers?.code ?? "0")!, userInfo: nil)
+                }
                 }, onError: { error in
-                debugPrint(error)
+                self.error.value = error
             }).addDisposableTo(self.disposeBag)
     }
     

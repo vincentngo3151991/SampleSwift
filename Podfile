@@ -10,6 +10,7 @@ def shared_pod
     pod 'RxCocoa'
     pod 'JLRoutes'
     pod 'SVProgressHUD'
+    pod 'SCLAlertView'
 end
 
 target 'SampleSwift' do

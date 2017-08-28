@@ -9,7 +9,7 @@
 import UIKit
 import RxCocoa
 import RxSwift
-
+import SCLAlertView
 class WeatherListViewController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
     let viewModel = WeatherListViewModel()
@@ -34,6 +34,17 @@ class WeatherListViewController: BaseViewController {
             .subscribe(onNext: { [weak self]weather in
                 self?.tableView.reloadData()
                 self?.updateHeader()
+            }).addDisposableTo(self.disposeBag)
+        self.viewModel.error
+            .asObservable()
+            .skip(1)
+            .filter({error in
+                return error != nil
+            }).subscribe(onNext: { [weak self]error in
+                let alertView = SCLAlertView()
+                alertView.showError("Error", subTitle: error?.localizedDescription ?? "").setDismissBlock {
+                    self?.navigationController?.popViewController(animated: true)
+                }
             }).addDisposableTo(self.disposeBag)
     }
     
