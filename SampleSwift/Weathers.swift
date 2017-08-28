@@ -9,25 +9,14 @@
 import UIKit
 import ObjectMapper
 class Weathers: BaseModel {
-    var dt : Int = 0
-    var main : WeatherMain?
-    var weathers: Array<Weather> = Array()
-    var clouds : Cloud?
-    var wind : Wind?
-    var rain : Rain?
-    var name : String = ""
-    var sys : Sys?
-    
+    var code : String = ""
+    var list : Array<Weather> = Array()
+    var city : City?
     override func mapping(map: Map) {
         super.mapping(map: map)
         
-        self.dt <- map["dt"]
-        self.main <- map["main"]
-        self.weathers <- map["weather"]
-        self.clouds <- map["clouds"]
-        self.rain <- map["rain"]
-        self.wind <- map["wind"]
-        self.name <- map["name"]
-        self.sys <- map["sys"]
+        self.code <- map["code"]
+        self.list <- map["list"]
+        self.city <- map["city"]
     }
 }
