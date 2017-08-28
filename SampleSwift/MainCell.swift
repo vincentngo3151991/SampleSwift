@@ -9,6 +9,7 @@
 import UIKit
 
 class MainCell: BaseTableViewCell {
+    @IBOutlet weak var zipCodeTextField: UITextField!
     override class func cellId() -> String {
         return "mainCellId"
     }
@@ -23,5 +24,9 @@ class MainCell: BaseTableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+    }
+
+    @IBAction func handleSearchTapped(_ sender: Any) {
+        self.viewModel?.routingSubject.value = self.zipCodeTextField.text as AnyObject
     }
 }

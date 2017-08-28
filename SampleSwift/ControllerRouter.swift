@@ -10,7 +10,7 @@ import UIKit
 import JLRoutes
 
 enum ControllerRoutePath: String {
-    case Main = "main"
+    case WeatherListControllerRoute = "weatherListViewControllerId"
 }
 
 enum RouteMode: String {
@@ -19,7 +19,7 @@ enum RouteMode: String {
 
 class ControllerRouter: NSObject {
     static func configure() {
-        
+        addRoute(path: .WeatherListControllerRoute)
     }
     
     static func storyBoard() -> UIStoryboard {

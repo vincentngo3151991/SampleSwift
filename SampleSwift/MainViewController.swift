@@ -22,5 +22,12 @@ class MainViewController: BaseViewController {
         self.dataSource = TableViewDataSource(viewModel: self.viewModel)
         self.tableView.rx.setDelegate(self.dataSource!).addDisposableTo(self.disposeBag)
         self.tableView.rx.setDataSource(self.dataSource!).addDisposableTo(self.disposeBag)
+        self.viewModel.routingSubject.asObservable()
+            .filter({ object -> Bool in
+                return object != nil
+            })
+            .subscribe(onNext: { [weak self]object in
+                ControllerRouter.route(path: .WeatherListControllerRoute, sender: self!, parameters: object)
+            }).addDisposableTo(self.disposeBag)
     }
 }

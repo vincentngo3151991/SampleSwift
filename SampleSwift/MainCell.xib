@@ -33,6 +33,9 @@
                         <state key="normal" title="Search">
                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
+                        <connections>
+                            <action selector="handleSearchTapped:" destination="oGH-fo-1rO" eventType="touchUpInside" id="c6u-u6-0GW"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
@@ -45,6 +48,9 @@
                     <constraint firstItem="Twd-WI-tM0" firstAttribute="leading" secondItem="kuL-uy-IXU" secondAttribute="leading" constant="16" id="rg1-lA-4H1"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="zipCodeTextField" destination="Twd-WI-tM0" id="2Ze-Iz-skE"/>
+            </connections>
             <point key="canvasLocation" x="19.5" y="-102"/>
         </tableViewCell>
     </objects>
